@@ -45,7 +45,7 @@ export default function DashBoard() {
           display: block;
           width: 100%;
           padding: 0.7rem 1rem;
-          font-size: 3rem;
+          font-size: 2rem;
         }
         .item__description,
         .item__icon {
@@ -69,13 +69,6 @@ export default function DashBoard() {
       <div className="dash__list">
         <div className="dash__list--item">
           <div className="item__title"> Item</div>
-          <span className="item__icon">
-            <BsTagsFill size={40} />
-          </span>
-          <span className="item__description"> Description </span>
-        </div>
-        <div className="dash__list--item">
-          <h3 className="item__title"> Item</h3>
           <span className="item__icon">
             <BsTagsFill size={40} />
           </span>

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { MdOutlineInventory } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { TbReportSearch } from "react-icons/tb";
+import { GiSellCard } from "react-icons/gi";
 import { IoIosLogIn } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
 import { GrLogout } from "react-icons/gr";
-import { GoChecklist } from "react-icons/go";
+import { FaShippingFast } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const MySlider = styled.div`
@@ -74,7 +74,7 @@ const MySlider = styled.div`
         }
         p {
           opacity: ${({ ancho }) => (ancho ? "1" : "0")};
-         // transition: opacity 0.5s linear;
+          // transition: opacity 0.5s linear;
           font-size: 1.5rem;
         }
       }
@@ -109,13 +109,13 @@ export default function SliderInventario({ handleWidth, width }) {
             <MdDashboard size={40} />
             <p>Dasboard</p>
           </a>
-          <a>
-            <GoChecklist size={40} />
-            <p>Reportes</p>
+          <a href="#products">
+            <GiSellCard size={40} />
+            <p>Prouctos</p>
           </a>
-          <a href="">
-            <BsFillPersonLinesFill />
-            <p>Registros</p>
+          <a href="#providers">
+            <FaShippingFast size={40} />
+            <p>Proveedores</p>
           </a>
           <a>
             <GrLogout size={40} />

@@ -13,13 +13,13 @@ export default function Login({ width }) {
     text-align: center;
 
     .login__formulario {
-      color: #fff;
       display: flex;
       flex-direction: column;
       width: 400px;
       max-width: 95%;
       gap: 2rem;
-      background-color: darkblue;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
       padding: 2rem;
       border-radius: 1rem;
       .login__title {
@@ -30,20 +30,22 @@ export default function Login({ width }) {
         padding: 10px;
         border-radius: 0.5rem;
         border: none;
-        &:focus {
-          outline: none;
-        }
+        border-bottom: 1px solid #ccc;
       }
+      .login__input:focus {
+        outline: none;
+      }
+
       .login__button {
         align-self: center;
         padding: 7px 15px;
         cursor: pointer;
         font-size: 1.9rem;
         border: none;
-        border-radius: .3rem;
+        border-radius: 0.3rem;
 
         &:hover {
-          background-color: green;
+          background-color: darkblue;
           color: #fff;
         }
       }
@@ -57,13 +59,13 @@ export default function Login({ width }) {
           className="login__input"
           type="text"
           name="user"
-          placeholder="escriba su usuario"
+          placeholder="Escriba su usuario"
         />
         <input
           className="login__input"
           type="text"
           name="password"
-          placeholder="escriba su contraseña"
+          placeholder="Escriba su contraseña"
         />
         <button className="login__button" type="submit">
           {" "}

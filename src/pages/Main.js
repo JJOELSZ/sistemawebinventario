@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Login from "../components/Login";
 import DashBoard
  from "./DashBoard";
+ import Providers from "../components/Providers";
+import Products from "../components/Products";
 export default function Main({ width }) {
   const MyMain = styled.div`
     width: calc(100% - ${({ ancho }) => (ancho ? "25rem" : "6rem")});
@@ -12,6 +14,8 @@ export default function Main({ width }) {
   return <MyMain ancho={width}>
     <Login />
     <DashBoard />
+    <Products />
+    <Providers />
 
   </MyMain>;
 }
